@@ -25,7 +25,7 @@ const projects = [
       "A data-driven approach on patient's data to establish care across 10 major hosptials- uncovering trends, costs, insights to improve outcomesand inform smarter healthcare decisions",
     image: "/project2.png",
     tags: ["Power BI", "DAX", "Power Query"],
-    demo: "https://app.powerbi.com/view?r=eyJrIjoiZGRhMzgyMjEtYTNhZC00NDI1LWFmNGUtOTgzYmJiMTI5Y2Y1IiwidCI6IjJiNDkzNTk3LWNiNWMtNDNlOC04NzlmLWYwZmI2OWYwZTU1NSIsImMiOjl9",
+    demo: "https://app.powerbi.com/view?r=eyJrIjoiMjM3ZGQwZDYtYjVlNi00MDdhLTg2YTYtNDJmZTQwZGNhNDIxIiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
     github: "",
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       "An advanced marketing analytics dashboard that provides comprehensive visibility into digital campaign performance across multiple channels and product categories.",
     image: "/project3.png",
     tags: ["DAX", "Power BI", "ETL", "Data Warehouse"],
-    demo: "https://app.powerbi.com/view?r=eyJrIjoiMzRkYTU1NDEtM2E3ZS00ODk2LWJhODgtNGEwMTM4MzI3MjcyIiwidCI6IjJiNDkzNTk3LWNiNWMtNDNlOC04NzlmLWYwZmI2OWYwZTU1NSIsImMiOjl9",
+    demo: "https://app.powerbi.com/view?r=eyJrIjoiNWIwNzhlMzctMTMyMy00YjI0LTg4OWItMDA5M2RkNDJiOTY5IiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
     github: "",
   },
 ];
