@@ -80,7 +80,7 @@ export default function AboutSection() {
                 <CardContent className="p-4">
                   <h4 className="font-medium">Data Analyst</h4>
                   <p className="text-sm text-muted-foreground">
-                    DCA | 2024 - Present
+                    DCA | 2024 - 2025
                   </p>
                   <ul className="text-sm mt-2 space-y-1 text-muted-foreground">
                     <li>• Built interactive dashboards using Power BI</li>
@@ -112,7 +112,7 @@ export default function AboutSection() {
                 <CardContent className="p-4">
                   <h4 className="font-medium">Bachelor's in Business Information Technology</h4>
                   <p className="text-sm text-muted-foreground">
-                    Africa Nazarene University | 2020 - 2024
+                    Africa Nazarene University
                   </p>
                 </CardContent>
               </Card>
@@ -120,7 +120,7 @@ export default function AboutSection() {
                 <CardContent className="p-4">
                   <h4 className="font-medium">Data Analysis Certification</h4>
                   <p className="text-sm text-muted-foreground">
-                    ALX | 2024
+                    ALX
                   </p>
                 </CardContent>
               </Card>
