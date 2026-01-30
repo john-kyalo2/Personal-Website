@@ -15,7 +15,7 @@ const projects = [
       "Interactive Power BI dashboard providing real-time sales insights, KPIs, and trends analysis for a retail company.This has been done across regions, products and time periods.",
     image: "/project1.jpg",
     tags: ["Power BI", "DAX", "SQL", "UI/UX"],
-    demo: "https://app.powerbi.com/view?r=eyJrIjoiZjJlYTBjM2EtNWIxZS00ZDI5LTk0YTAtZmMzMWUzYzQ3ZjlmIiwidCI6IjJiNDkzNTk3LWNiNWMtNDNlOC04NzlmLWYwZmI2OWYwZTU1NSIsImMiOjl9",
+    demo: "https://app.fabric.microsoft.com/view?r=eyJrIjoiNjZkYjdmMDItYTAwYy00Y2JiLTkwYjQtNzlmNGM1NmY3ZmY2IiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
     github: "",
   },
   {
