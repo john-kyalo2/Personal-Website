@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "John Kyalo | Data & BI Analyst",
-  description: "Portfolio website for John Kyalo, a Data and BI Analyst helping businesses make sense of their data.",
+  description:
+    "John Kyalo — Data & BI Analyst. Live dashboards, projects, and fresh writing on data, Power BI and Microsoft Fabric. Anything & Everything Data.",
 };
 
 export default function RootLayout({

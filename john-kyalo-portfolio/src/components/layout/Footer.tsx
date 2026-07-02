@@ -40,7 +40,7 @@ export default function Footer() {
               <Linkedin className="h-5 w-5" />
             </Link>
             <Link
-              href="https://dev.to/johnkyalo"
+              href="https://medium.com/@johnkyalo212"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors"

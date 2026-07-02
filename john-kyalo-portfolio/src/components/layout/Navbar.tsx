@@ -9,8 +9,9 @@ import { useTheme } from "next-themes";
 
 const navLinks = [
   { name: "Home", to: "home", offset: -100 },
-  { name: "About", to: "about", offset: -100 },
+  { name: "Experience", to: "experience", offset: -100 },
   { name: "Projects", to: "projects", offset: -100 },
+  { name: "Writing", to: "writing", offset: -100 },
   { name: "Skills", to: "skills", offset: -100 },
   { name: "Certificates", to: "certificates", offset: -100 },
   { name: "Contact", to: "contact", offset: -100 },

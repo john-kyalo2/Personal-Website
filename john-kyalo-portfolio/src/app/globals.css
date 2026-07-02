@@ -80,6 +80,15 @@
     @apply py-16 md:py-24;
   }
 
+  /* Horizontal rails: scroll without showing a scrollbar */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .section-title {
     @apply text-2xl md:text-4xl font-bold mb-6;
   }
