@@ -9,7 +9,6 @@ import { useTheme } from "next-themes";
 
 const navLinks = [
   { name: "Home", to: "home", offset: -100 },
-  { name: "Experience", to: "experience", offset: -100 },
   { name: "Projects", to: "projects", offset: -100 },
   { name: "Writing", to: "writing", offset: -100 },
   { name: "Skills", to: "skills", offset: -100 },

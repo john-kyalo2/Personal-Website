@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -27,7 +27,7 @@ const projects: Project[] = [
       "Interactive Power BI dashboard providing real-time sales insights, KPIs, and trend analysis for a retail company — across regions, products and time periods.",
     image: "/project1.jpg",
     tags: ["Power BI", "DAX", "SQL", "UI/UX"],
-    demo: "https://app.fabric.microsoft.com/view?r=eyJrIjoiNjZkYjdmMDItYTAwYy00Y2JiLTkwYjQtNzlmNGM1NmY3ZmY2IiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
+    demo: "https://app.fabric.microsoft.com/view?r=eyJrIjoiZWFkMTBlMDctNDdlZS00NjU4LThkN2ItODQ1NzU1MzBhYzMxIiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
   },
   {
     id: 2,
@@ -36,35 +36,54 @@ const projects: Project[] = [
       "A data-driven look at patient data across 10 major hospitals — uncovering trends, costs and insights to improve outcomes and inform smarter healthcare decisions.",
     image: "/project2.png",
     tags: ["Power BI", "DAX", "Power Query"],
-    demo: "https://app.powerbi.com/view?r=eyJrIjoiMjM3ZGQwZDYtYjVlNi00MDdhLTg2YTYtNDJmZTQwZGNhNDIxIiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
+    demo: "https://app.fabric.microsoft.com/view?r=eyJrIjoiMTYzNzc4YzMtNmZjZC00MjEyLWI1MDAtMzE5N2ExYjI2Zjg2IiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
   },
   {
     id: 3,
-    title: "Digital Marketing Campaign Hub",
-    description:
-      "An advanced marketing analytics dashboard with comprehensive visibility into digital campaign performance across multiple channels and product categories.",
-    image: "/project3.png",
-    tags: ["DAX", "Power BI", "ETL", "Data Warehouse"],
-    demo: "https://app.powerbi.com/view?r=eyJrIjoiNWIwNzhlMzctMTMyMy00YjI0LTg4OWItMDA5M2RkNDJiOTY5IiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
-  },
-  {
-    id: 4,
     title: "BAL 2026 — Scores to a Story",
     description:
       "Near real-time analytics on the Basketball Africa League: live standings and player stats ingested with Microsoft Fabric notebooks into a Lakehouse, modeled, and served in Power BI.",
     image: "/Fabric_arc.png",
-    tags: ["Microsoft Fabric", "Lakehouse", "Notebooks", "Power BI"],
+    tags: ["Microsoft Fabric", "Power BI"],
     demo: "https://medium.com/@johnkyalo212/a-microsoft-fabric-bal-2026-from-scores-to-a-story-part-1-3-cb14cd046431",
     demoLabel: "Read Case Study",
   },
   {
-    id: 5,
+    id: 4,
     title: "Profit & Loss Statement",
     description:
       "A finance-grade P&L in Power BI: a structure table encodes accounting logic into the model, so Gross, Operating and Net Profit compute — and order — themselves correctly.",
     image: "/P&Lstatement.png",
     tags: ["Power BI", "DAX", "Financial Reporting"],
     demo: "https://app.powerbi.com/view?r=eyJrIjoiZmQ0NjY2ODQtZDk0Ny00ZWI0LWI2OTctZTM2ODk5ZmJkZTllIiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
+  },
+  {
+    id: 5,
+    title: "Moving Data Through Fabric",
+    description:
+      "All about the plumbing: Excel sources land in a Lakehouse, Dataflow Gen2 cleans and enriches, a pipeline keeps a Warehouse in sync, and a semantic model with DAX time-intelligence serves the final report.",
+    image: "/project6.png",
+    tags: ["Microsoft Fabric", "Notebooks", "Dataflow Gen2"],
+    demo: "https://github.com/zinduaschool/fabric-analytics-project-john-kyalo2",
+    demoLabel: "View on GitHub",
+  },
+  {
+    id: 6,
+    title: "Football Merchandise Sales",
+    description:
+      "A Power BI report on fictional football merchandise data, tracking revenue, top-selling products and fan buying patterns across clubs and seasons.",
+    image: "/project5.png",
+    tags: ["Power BI", "DAX", "Retail Analytics", "Data Modeling"],
+    demo: "https://app.fabric.microsoft.com/view?r=eyJrIjoiNmRlYTU2ODctOTdiYi00YTZkLWIwZDgtY2FmMDg2OGQxYzg5IiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
+  },
+  {
+    id: 7,
+    title: "Credit Analysis",
+    description:
+      "A Power BI deep-dive into lending: disbursements, repayment behavior and portfolio quality in one view — showing where credit risk concentrates and which borrower segments actually perform.",
+    image: "/project7.png",
+    tags: ["Power BI", "DAX", "Credit Risk", "Financial Analytics"],
+    demo: "https://app.fabric.microsoft.com/view?r=eyJrIjoiODgzNzFhZWYtYTQyZS00YTcxLTk4YjYtNGMyODFjY2ZlMjVkIiwidCI6ImI2N2EzNmQwLWI2ZWMtNDg3YS05NTdjLWM2MWRjZjg3NTdlYiJ9",
   },
 ];
 
@@ -84,13 +103,37 @@ export default function ProjectsSection() {
     setCurrent(Math.min(projects.length, Math.round(p * (projects.length - 1)) + 1));
   }, []);
 
+  // Gentle auto-scroll until the visitor takes over (or prefers reduced motion)
+  const [autoPlay, setAutoPlay] = useState(true);
+  const [hovered, setHovered] = useState(false);
+  const stopAutoPlay = useCallback(() => setAutoPlay(false), []);
+
   const scrollByCard = (dir: 1 | -1) => {
+    setAutoPlay(false); // hand control to the visitor
     const rail = railRef.current;
     if (!rail) return;
     const card = rail.querySelector<HTMLElement>("[data-rail-card]");
     const step = card ? card.offsetWidth + 24 : 380;
     rail.scrollBy({ left: dir * step, behavior: "smooth" });
   };
+
+  useEffect(() => {
+    if (!autoPlay || hovered) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const timer = setInterval(() => {
+      const rail = railRef.current;
+      if (!rail) return;
+      const max = rail.scrollWidth - rail.clientWidth;
+      if (rail.scrollLeft >= max - 16) {
+        rail.scrollTo({ left: 0, behavior: "smooth" }); // loop back to row 01
+      } else {
+        const card = rail.querySelector<HTMLElement>("[data-rail-card]");
+        const step = card ? card.offsetWidth + 24 : 380;
+        rail.scrollBy({ left: step, behavior: "smooth" });
+      }
+    }, 3500);
+    return () => clearInterval(timer);
+  }, [autoPlay, hovered]);
 
   return (
     <section id="projects" className="section-padding bg-secondary/30">
@@ -153,6 +196,11 @@ export default function ProjectsSection() {
         <div
           ref={railRef}
           onScroll={handleScroll}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          onPointerDown={stopAutoPlay}
+          onWheel={stopAutoPlay}
+          onTouchStart={stopAutoPlay}
           className="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 max-w-6xl mx-auto"
         >
           {projects.map((project, index) => {
@@ -189,7 +237,7 @@ export default function ProjectsSection() {
                     <h3 className="text-lg font-semibold mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4 line-clamp-3 flex-grow">
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-5 flex-grow">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-1.5 mb-4">

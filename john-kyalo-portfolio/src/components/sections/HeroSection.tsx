@@ -43,10 +43,10 @@ export default function HeroSection() {
               />
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-2xl">
-              I turn scattered, messy data into dashboards and stories that
-              people actually use to make decisions. From SQL and Python to
-              Power BI and Microsoft Fabric, I build analytics end to end —
-              and I write about the journey as I go.
+              In a world overflowing with data, clarity is a competitive advantage. I specialize in creating that clarity.
+              I transform fragmented data into intuitive dashboards and meaningful stories that help organizations see patterns, 
+              uncover opportunities, and ask better questions.
+              
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -149,8 +149,8 @@ export default function HeroSection() {
                     {"  "}
                     <span className="text-purple-600">stack</span>: [
                     <span className="text-amber-600">'Power BI'</span>,{" "}
-                    <span className="text-amber-600">'SQL'</span>,{" "}
-                    <span className="text-amber-600">'Python'</span>],
+                    <span className="text-amber-600">'Fabric'</span>,{" "}
+                    <span className="text-amber-600">'SQL'</span>],
                     <br />
                     {"  "}
                     <span className="text-purple-600">mission</span>:{" "}
